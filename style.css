@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    color: #222;
 }
 
 #wrapper {
@@ -36,6 +36,11 @@ body {
     background-color: #222;
     color: white;
 }
+
+#home {
+    background-image: url(images/me.jpg);
+    background-size: cover;
+}
 .page {
     height: auto;
     min-height: 100vh;
@@ -43,6 +48,26 @@ body {
     background-color: #eee;
 }
 
+.jumbotron {
+    width: 80%;
+    margin: 100px auto;
+    border: 5px solid white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.jumbotron h2 {
+    font-size: 3em;
+    color: black;
+    text-transform: uppercase;
+}
+
+.jumbotron h3 {
+    font-size: 2em;
+    color: #222;
+}
 @media all and (max-width:640px) {
 
     #navbar {
