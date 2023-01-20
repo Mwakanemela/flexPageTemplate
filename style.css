@@ -135,6 +135,63 @@ body {
     padding: 10px;
     width: 100%;
 }
+
+
+/* contact section */
+.myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    text-align: left;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rowForm {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.rowForm .name, .rowForm .email {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 45%;
+}
+
+#email, #name , #subject{
+    width: 100%;
+    height: 40px;
+    font-size: 1.5em;
+}
+#message {
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.message button {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(211, 13, 122, 0.9);
+    font-size: 2em;
+    cursor: pointer;
+}
+.myForm .subject, .myForm .message {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
 @media all and (max-width:640px) {
 
     #navbar {
@@ -151,5 +208,14 @@ body {
 
     .card {
         flex: auto;
+    }
+
+    .rowForm .name, .rowForm .email {
+        width: 100%;
+        display: block;
+    }
+
+    .rowForm {
+        flex-direction: column;
     }
 }
